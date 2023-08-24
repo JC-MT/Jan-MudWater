@@ -3,6 +3,8 @@ body {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  background-color: #dad8c9;
 }
 
 h1,
@@ -43,7 +45,7 @@ p {
 }
 
 a {
-  color: #000;
+  color: white;
   text-decoration: none;
 }
 
@@ -69,14 +71,15 @@ body {
 }
 
 body > main {
-  margin: 0 1rem 1rem 1rem;
+  margin-top: -80px;
+  display: flex;
 }
 
 section {
-  padding: 1rem 0;
+  /* padding: 1rem 0;
   @media (min-width: 768px) {
     padding: 2rem 0;
-  }
+  } */
 }
 
 fieldset {
@@ -117,7 +120,7 @@ li {
   margin-bottom: 0.5rem;
 }
 
-dl {
+/* dl {
   margin: 0.5rem 0;
 }
 
@@ -126,4 +129,4 @@ code {
   border-radius: 4px;
   font-family: monospace;
   padding: 0.25rem;
-}
+} */

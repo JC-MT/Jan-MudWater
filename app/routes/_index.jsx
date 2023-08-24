@@ -20,14 +20,15 @@ export default function Homepage() {
   const data = useLoaderData();
   return (
     <div className="home">
-      <FeaturedCollection collection={data.featuredCollection} />
-      <RecommendedProducts products={data.recommendedProducts} />
+      {/* <FeaturedCollection collection={data.featuredCollection} /> */}
+      {/* <RecommendedProducts products={data.recommendedProducts} /> */}
     </div>
   );
 }
 
 function FeaturedCollection({collection}) {
   const image = collection.image;
+  console.log(collection.handle);
   return (
     <Link
       className="featured-collection"
@@ -49,7 +50,7 @@ function RecommendedProducts({products}) {
       <h2>Recommended Products</h2>
       <Suspense fallback={<div>Loading...</div>}>
         <Await resolve={products}>
-          {({products}) => (
+          {/* {({products}) => (
             <div className="recommended-products-grid">
               {products.nodes.map((product) => (
                 <Link
@@ -69,7 +70,7 @@ function RecommendedProducts({products}) {
                 </Link>
               ))}
             </div>
-          )}
+          )} */}
         </Await>
       </Suspense>
       <br />
